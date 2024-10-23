@@ -1,67 +1,21 @@
-<!--<h2>Technologies</h2>
-<div id="technologies-list">
-  <div class="tech">
-    <div class="logos">
-      <img src="python-logo.png" alt="Python" class="logo" id="python-logo">
+<div class="container">
+  <div class="row">
+    @for (technology of technologies; track technology.id) {
+    <div class="col-4 mb-4">
+      <div class="card shadow text-center">
+        <div class="card-body">
+          <h5 class="card-title">{{technology.name}}</h5>
+          <img src={{technology.picture}} alt="logo" />
+        </div>
+        <div class="card-footer">
+          <div class="d-flex flex-wrap justify-content-center">
+            @for (tag of technology.tags; track tag) {
+            <div class="tag me-2 mb-1 rounded-3" [style.background-color]="tag.bgcolor" [style.color]="tag.color">{{tag}}</div>
+            }
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="proficiency">
-      Advanced
-    </div>
-    <div class="where">
-      <div class="item">DUT</div>
-      <div class="item">Ensimag</div>
-      <div class="item">Personal Projects</div>
-    </div>
+    }
   </div>
-
-  <div class="tech">
-    <div class="logos">
-      <img src="cpp-logo.svg" alt="C++" class="logo" id="cpp-logo">
-    </div>
-    <div class="proficiency">
-      Advanced
-    </div>
-    <div class="where">
-      <div class="item">DUT</div>
-      <div class="item">Ensimag</div>
-      <div class="item">Personal Projects</div>
-    </div>
-  </div>
-
-  <div class="tech">
-    <div class="logos">
-      <img src="csharp-logo.svg" alt="C#" class="logo" id="csharp-logo">
-    </div>
-    <div class="proficiency">
-      Intermediate
-    </div>
-    <div class="where">
-      <div class="item">ChosenTactics</div>
-    </div>
-  </div>
-
-  <div class="tech">
-    <div class="logos">
-      <img src="django-logo.png" alt="Django" class="logo" id="django-logo">
-    </div>
-    <div class="proficiency">
-      Beginner
-    </div>
-    <div class="where">
-      <div class="item">Ensimag</div>
-      <div class="item">Personal Projects</div>
-    </div>
-  </div>
-
-  <div class="tech">
-    <div class="logos">
-      <img src="angular-logo.svg" alt="Python" class="logo" id="angular-logo">
-    </div>
-    <div class="proficiency">
-      Beginner
-    </div>
-    <div class="where">
-      <div class="item">Personal Portfolio</div>
-    </div>
-  </div>
-</div>-->
+</div>

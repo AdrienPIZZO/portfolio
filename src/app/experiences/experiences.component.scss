@@ -1,0 +1,32 @@
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 98%;
+  background-color: black;
+}
+
+.timeline-card.left {
+  margin-right: 55%;
+}
+
+.timeline-card.right {
+  margin-left: 55%;
+}
+
+.timeline-marker {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  border: 2px solid black;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

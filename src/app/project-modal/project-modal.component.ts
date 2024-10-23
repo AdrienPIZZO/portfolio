@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Project } from '../_models/Project';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @Component({
@@ -7,8 +8,13 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
   standalone: true,
   imports: [CarouselModule],
   templateUrl: './project-modal.component.html',
-  styleUrl: './project-modal.component.scss'
+  styleUrl: './project-modal.component.scss',
 })
+
 export class ProjectModalComponent {
-  @Input() project = {} as Project;
+  project = {} as Project;
+
+  constructor(public bsModalRef: BsModalRef) {
+
+  }
 }

@@ -1,1 +1,51 @@
-<!--<p>experiences works!</p>-->
+<!--<div class="container">
+  <div class="row">
+    @for (experience of experiences; track experience.id) {
+    <div class="col-12 mb-4">
+      <div class="card shadow text-center">
+        <div class="card-body">
+          <h3 class="card-title">{{experience.name}}</h3>
+          <p>{{experience.company}}</p>
+          <p>{{experience.date}}</p>
+          <p>{{experience.location}}</p>
+          <p>{{experience.description}}</p>
+        </div>
+        <div class="card-footer">
+          <div class="d-flex flex-wrap justify-content-center">
+            @for (tag of experience.tags; track tag) {
+            <div class="tag me-2 mb-1 rounded-3" [style.background-color]="tag.bgcolor" [style.color]="tag.color">{{tag}}</div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>-->
+
+<div class="container timeline">
+  <div class="row">
+    @for (experience of experiences; track experience.id; let i = $index) {
+    <div class="col-12 mb-4 d-flex flex-column align-items-center">
+      <div class="card shadow text-center timeline-card" [ngClass]="{'left': i % 2 === 0, 'right': i % 2 !== 0}">
+        <div class="card-body">
+          <h3 class="card-title">{{experience.name}}</h3>
+          <p>{{experience.company}}</p>
+          <p>{{experience.date}}</p>
+          <p>{{experience.location}}</p>
+          <p>{{experience.description}}</p>
+        </div>
+        <div class="card-footer">
+          <div class="d-flex flex-wrap justify-content-center">
+            @for (tag of experience.tags; track tag) {
+            <div class="tag me-2 mb-1 rounded-3" [style.background-color]="tag.bgcolor" [style.color]="tag.color">{{tag}}</div>
+            }
+          </div>
+        </div>
+      </div>
+       <!--La flèche centrale--> 
+      <div class="timeline-marker"></div>
+    </div>
+    }
+  </div>
+</div>

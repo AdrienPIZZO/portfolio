@@ -3,10 +3,11 @@ import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
-import { CarouselModule } from 'ngx-bootstrap/carousel'
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    importProvidersFrom(CarouselModule.forRoot()),
+    importProvidersFrom(ModalModule.forRoot(), CarouselModule.forRoot()),
     provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration()]
 };
