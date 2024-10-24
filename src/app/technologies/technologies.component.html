@@ -1,17 +1,20 @@
 <div class="container">
   <div class="row">
     @for (technology of technologies; track technology.id) {
-    <div class="col-4">
-      <div class="card shadow text-center">
-        <div class="card-body">
-          <h5 class="card-title">{{technology.name}}</h5>
-          <img src={{technology.picture}} alt="logo" />
-        </div>
-        <div class="card-footer">
-          <div class="d-flex flex-wrap justify-content-center">
-            @for (tag of technology.tags; track tag) {
-            <div class="tag me-2 mb-1 rounded-3" [style.background-color]="tag.bgcolor" [style.color]="tag.color">{{tag}}</div>
-            }
+    <div class="technology">
+      <div class="col">
+        <div class="card shadow text-center">
+          <div class="card-body">
+            <h5 class="card-title">{{technology.name}}</h5>
+            <img src={{technology.picture}} alt="logo" />
+            <p class="mt-3">{{technology.proficiency}}</p>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex flex-wrap justify-content-center">
+              @for (tag of technology.tags; track tag) {
+              <div class="tag me-2 mb-1 rounded-3" [style.background-color]="tag.bgcolor" [style.color]="tag.color">{{tag}}</div>
+              }
+            </div>
           </div>
         </div>
       </div>

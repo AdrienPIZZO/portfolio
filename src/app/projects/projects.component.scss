@@ -1,0 +1,12 @@
+.project {
+  display: block;
+  width: 33%;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .project {
+    display: block;
+    width: 100%;
+  }
+}

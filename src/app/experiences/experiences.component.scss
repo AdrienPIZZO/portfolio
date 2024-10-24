@@ -30,3 +30,30 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+.card {
+    width: 45%;
+}
+
+@media only screen and (max-width: 800px) {
+  .card{
+    width: 100%;
+  }
+  
+  .timeline-card.left {
+    margin-right: 0%;
+  }
+  .timeline-card.right {
+    margin-left: 0%;
+  }
+
+  .timeline::before {
+    left: 0%;
+  }
+
+  .timeline-marker {
+    left: 0%;
+    width: 15px;
+    height: 15px;
+  }
+}

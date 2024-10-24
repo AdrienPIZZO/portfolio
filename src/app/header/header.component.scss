@@ -1,4 +1,21 @@
 .jumbotron {
+  position: relative;
   padding: 0.2rem;
   background-color: white;
+}
+
+.links {
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+}
+
+#gitlab-logo {
+  height: 44px;
+  width: 44px;
+}
+
+#linkedin-logo {
+  height: 30px;
+  width: 30px;
 }

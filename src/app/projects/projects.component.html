@@ -1,9 +1,11 @@
 <div class="container">
   <div class="row">
     @for (project of projects; track project.id) {
+    <div class="project">
       <div class="col">
         <app-project-card [project]="project"></app-project-card>
       </div>
+    </div>
     }
   </div>
 </div>
