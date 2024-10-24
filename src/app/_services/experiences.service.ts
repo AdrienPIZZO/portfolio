@@ -25,7 +25,17 @@ export class ExperiencesService {
       description: "Integrated an ELK Stack into an existing product to process incoming logs and enable graphical data representation; \
       created insightful Kibana visualizations to analyze component latency, and set up a Spark/Hadoop benchmark on a cluster.",
       tags: [Tag.PYTHON, Tag.SPARK, Tag.HADOOP, Tag.ELK, Tag.DOCKER, Tag.GIT, Tag.SHELL, Tag.LINUX]
-    }
+    },
+    {
+      id: 3, name: "Engineering School", date: "2017 - 2021", company: "Grenoble INP - Ensimag", location: "Grenoble, France",
+      description: "",
+      tags: [Tag.CPP, Tag.PYTHON, Tag.SQL, Tag.SPARK, Tag.HADOOP, Tag.DOCKER, Tag.GIT, Tag.SHELL, Tag.LINUX]
+    },
+    {
+      id: 4, name: "DUT in Computer Science", date: "2015 - 2017", company: "Aix-Marseille University", location: "Aix-en-Provence, France",
+      description: "",
+      tags: [Tag.CPP, Tag.PYTHON, Tag.SQL, Tag.GIT, Tag.SHELL, Tag.LINUX]
+    },
   ];
   constructor() { }
 

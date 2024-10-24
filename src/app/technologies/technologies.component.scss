@@ -8,3 +8,11 @@ img {
   object-fit: contain;
   object-position: center;
 }
+
+.col-4:not(:nth-last-child(-n+3)) {
+  padding-bottom: 12px;
+}
+
+.col-4:nth-last-child(-n+3) {
+  padding-top: 12px;
+}

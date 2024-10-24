@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
 import { TechnologiesService } from '../_services/technologies.service';
 import { Technology } from '../_models/Technology';
 
@@ -12,8 +11,7 @@ import { Technology } from '../_models/Technology';
 })
 export class TechnologiesComponent implements OnInit {
   technologies = {} as Technology[];
-  constructor(private titleService: Title, private technologiesService: TechnologiesService) {
-    this.titleService.setTitle('Adrien PIZZO - Technologies');
+  constructor(private technologiesService: TechnologiesService) {
   }
 
   ngOnInit(): void {

@@ -9,7 +9,7 @@
   left: 50%;
   width: 2px;
   height: 98%;
-  background-color: black;
+  background-color: darkgreen;
 }
 
 .timeline-card.left {
@@ -23,9 +23,9 @@
 .timeline-marker {
   width: 15px;
   height: 15px;
-  background-color: black;
+  background-color: darkgreen;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 2px solid darkgreen;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);

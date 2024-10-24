@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Title } from '@angular/platform-browser';
 import { ProjectCardComponent } from '../project-card/project-card.component';
 import { ProjectsService } from '../_services/projects.service';
 import { Project } from '../_models/Project';
@@ -15,8 +14,7 @@ import { Project } from '../_models/Project';
 export class ProjectsComponent implements OnInit {
   projects = {} as Project[];
 
-  constructor(private titleService: Title, private projectService: ProjectsService) {
-    this.titleService.setTitle('Adrien PIZZO - Projects');
+  constructor(private projectService: ProjectsService) {
   }
 
   ngOnInit(): void {
