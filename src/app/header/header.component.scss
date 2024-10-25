@@ -1,3 +1,6 @@
+.header {
+  text-align: center;
+}
 .jumbotron {
   position: relative;
   padding: 0.2rem;
@@ -5,9 +8,7 @@
 }
 
 .links {
-    position: absolute;
-    bottom: 5px;
-    right: 20px;
+  text-align: center;
 }
 
 #gitlab-logo {

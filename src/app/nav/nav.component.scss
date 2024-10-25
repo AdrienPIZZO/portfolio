@@ -1,12 +1,14 @@
 nav {
   background-color: white;
   border-bottom: 1px dotted;
-}
-a {
-  color: black;
+  padding: 0px;
 }
 
 a:hover {
   color: darkgreen;
   font-weight: bold;
+}
+
+.navbar-text {
+    font-weight: bold;
 }
