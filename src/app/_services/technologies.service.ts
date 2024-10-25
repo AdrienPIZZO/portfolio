@@ -23,7 +23,7 @@ export class TechnologiesService {
       id: 4, name: "Django", proficiency: "Intermediate", picture: "django-logo.png", tags: [Tag.ENSIMAG, Tag.PERSONNAL]
     },
     {
-      id: 5, name: "Angular", proficiency: "Beginner", picture: "angular-logo.svg", tags: [Tag.PERSONNAL]
+      id: 5, name: "Angular", proficiency: "Beginner", picture: "angular-logo.png", tags: [Tag.PERSONNAL]
     },
   ];
   constructor() { }
